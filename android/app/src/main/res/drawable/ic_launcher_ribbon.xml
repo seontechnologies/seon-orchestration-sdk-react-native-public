@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adaptive icon foreground: "RN" corner ribbon.
+    Viewport is 108×108dp (adaptive icon canvas).
+    The safe/visible zone starts at (18,18). The ribbon triangle is anchored
+    to that corner so it is always fully visible regardless of mask shape.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Red ribbon triangle anchored to top-left of the safe zone -->
+    <group
+        android:translateX="-18"
+        android:translateY="-18">
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M18,18 L46,18 L18,46 Z" />
+    </group>
+    <!--
+        "RN" label: translated to the ribbon centroid (≈27,27),
+        then rotated −45° so text reads along the diagonal band.
+    -->
+    <group
+        android:translateX="10"
+        android:translateY="10"
+        android:rotation="-45">
+
+        <!-- Letter R (stroke-based, height ≈ 6dp) -->
+        <path
+            android:pathData="M-5,-3 L-5,3
+                              M-5,-3 L-2.5,-3 Q0,-3 0,-1.5 Q0,0 -2.5,0 L-5,0
+                              M-2.5,0 L0.5,3"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="@android:color/transparent" />
+
+        <!-- Letter N (stroke-based, height ≈ 6dp) -->
+        <path
+            android:pathData="M1.5,-3 L1.5,3
+                              M1.5,-3 L5.5,3
+                              M5.5,-3 L5.5,3"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="@android:color/transparent" />
+    </group>
+
+</vector>
