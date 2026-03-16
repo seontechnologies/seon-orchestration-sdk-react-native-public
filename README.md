@@ -196,6 +196,10 @@ npm run ios
 
 ## Changelog
 
+### 0.1.1
+
+- Fixed an issue with collision of Privacy Manifest
+
 ### 0.0.1
 
 - Initial release
