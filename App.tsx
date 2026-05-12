@@ -21,6 +21,7 @@ import {
   Alert,
   Platform,
   Linking,
+  Image,
 } from 'react-native';
 import {
   initialize,
@@ -216,12 +217,15 @@ export default function App() {
 
       {/* Header */}
       <View style={styles.header}>
-        <View style={styles.headerLogo}>
-          <Text style={styles.headerLogoText}>S</Text>
-        </View>
-        <View>
-          <Text style={styles.headerTitle}>SEON Identity Verification</Text>
-          <Text style={styles.headerSubtitle}>seon-react-native-orchestration</Text>
+        <Image
+          source={require('./assets/seon_app_icon.png')}
+          style={styles.headerLogoImage}
+          resizeMode="cover"
+          accessibilityLabel="SEON app mark"
+        />
+        <View style={styles.headerTitles}>
+          <Text style={styles.headerTitle}>SEON Orchestration SDK</Text>
+          <Text style={styles.headerSubtitle}>React Native SDK Example</Text>
         </View>
       </View>
 
@@ -406,6 +410,9 @@ const COLORS = {
 // ─── Styles ────────────────────────────────────────────────────────────────────
 const styles = StyleSheet.create({
   safeArea: { flex: 1, backgroundColor: COLORS.primary },
+  headerTitles: {
+    flex: 1,
+  },
   header: {
     backgroundColor: COLORS.primary,
     paddingHorizontal: 20,
@@ -414,15 +421,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
   },
-  headerLogo: {
-    width: 42,
-    height: 42,
+  headerLogoImage: {
+    width: 48,
+    height: 48,
     borderRadius: 12,
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    justifyContent: 'center',
-    alignItems: 'center',
+    overflow: 'hidden',
   },
-  headerLogoText: { color: '#FFF', fontSize: 22, fontWeight: '800' },
   headerTitle: { color: '#FFF', fontSize: 17, fontWeight: '700', letterSpacing: -0.3 },
   headerSubtitle: { color: 'rgba(255,255,255,0.65)', fontSize: 12, marginTop: 1 },
   scroll: { flex: 1, backgroundColor: COLORS.background },
