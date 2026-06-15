@@ -51,7 +51,6 @@ GoogleService-Info.plist
 secrets.*
 *.p12
 *.pem
-*.npmrc
 
 # Node
 node_modules/
