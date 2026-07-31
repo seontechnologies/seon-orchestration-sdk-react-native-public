@@ -196,6 +196,11 @@ npm run ios
 
 ## Changelog
 
+### 1.0.0
+
+- NFC Verification
+- Minor Improvements
+
 ### 0.1.1
 
 - Fixed an issue with collision of Privacy Manifest
