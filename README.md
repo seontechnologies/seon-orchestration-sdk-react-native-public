@@ -196,6 +196,10 @@ npm run ios
 
 ## Changelog
 
+### 1.0.1
+
+- Updated native iOS `SEONOrchSDK` to 1.0.2
+
 ### 1.0.0
 
 - NFC Verification
