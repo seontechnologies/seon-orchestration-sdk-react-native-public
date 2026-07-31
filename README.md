@@ -176,6 +176,27 @@ bundle install
 cd ios && bundle exec pod install
 ```
 
+**Android Gradle repository** (Android only, one-time)
+
+The native SDK depends transitively on Regula's Document Reader libraries
+(`com.regula.documentreader:api` / `com.regula.documentreader.core:rfid`) for document scanning,
+which aren't published to Maven Central or Google's Maven repo. `android/build.gradle` in this
+sample already declares Regula's public repository for you:
+
+```groovy
+rootProject.allprojects {
+    repositories {
+        maven {
+            url 'https://maven.regulaforensics.com/RegulaDocumentReader'
+        }
+    }
+}
+```
+
+If you're integrating the SDK into your own app rather than running this sample, add the same
+block to your project's root `android/build.gradle` — otherwise the Android build fails with
+`Could not find com.regula.documentreader...`.
+
 **3. Start Metro**
 
 ```sh
