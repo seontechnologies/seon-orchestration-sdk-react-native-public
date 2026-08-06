@@ -3,8 +3,7 @@
     <background android:drawable="@color/ic_launcher_background"/>
     <foreground>
         <inset
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:drawable="@drawable/ic_launcher_foreground_with_ribbon"
-            android:inset="25%" />
+            android:drawable="@drawable/ic_launcher_foreground"
+            android:inset="0%" />
     </foreground>
 </adaptive-icon>
