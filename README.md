@@ -217,6 +217,11 @@ npm run ios
 
 ## Changelog
 
+### 1.0.4
+
+- Updated native iOS `SEONOrchSDK` to **1.0.5**
+- Native Android `orchestration-android-sdk` remains **1.0.2**
+
 ### 1.0.3
 
 - Updated native iOS `SEONOrchSDK` to **1.0.4**
