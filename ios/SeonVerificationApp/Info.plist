@@ -36,13 +36,13 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Required for ID verification and selfie capture</string>
+	<string>App needs access to the camera to record videos</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Required for fraud prevention</string>
+	<string>We need to access your location to verify if it's match with your identity and requested service</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Required for video liveness checks</string>
+	<string>App needs access to the microphone to record videos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Required for proof of address document upload</string>
+	<string>This app requires access to the photo library to save images.</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -64,5 +64,17 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NFCReaderUsageDescription</key>
+	<string>This app uses NFC to read the chip on your identity document for verification purposes.</string>
+	<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+	<array>
+		<string>A0000002471001</string>
+		<string>E80704007F00070302</string>
+		<string>A000000167455349474E</string>
+		<string>A0000002480100</string>
+		<string>A0000002480200</string>
+		<string>A0000002480300</string>
+		<string>A00000045645444C2D3031</string>
+	</array>
 </dict>
 </plist>
