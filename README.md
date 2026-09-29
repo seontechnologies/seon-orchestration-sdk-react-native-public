@@ -138,11 +138,11 @@ The SEON SDK requires camera, microphone, and storage permissions. Location is o
 
 ```xml
 <key>NSCameraUsageDescription</key>
-<string>Required for ID verification and selfie capture</string>
+<string>App needs access to the camera to record videos</string>
 <key>NSMicrophoneUsageDescription</key>
-<string>Required for video liveness checks</string>
+<string>App needs access to the microphone to record videos</string>
 <key>NSPhotoLibraryUsageDescription</key>
-<string>Required for proof of address document upload</string>
+<string>This app requires access to the photo library to save images.</string>
 ```
 
 If your workflow uses geolocation-based fraud detection, also add `ACCESS_FINE_LOCATION` (Android) and `NSLocationWhenInUseUsageDescription` (iOS).
@@ -216,6 +216,16 @@ npm run ios
 ---
 
 ## Changelog
+
+### 1.0.4
+
+- Updated native iOS `SEONOrchSDK` to **1.0.5**
+- Native Android `orchestration-android-sdk` remains **1.0.2**
+
+### 1.0.3
+
+- Updated native iOS `SEONOrchSDK` to **1.0.4**
+- Updated native Android `orchestration-android-sdk` to **1.0.2**
 
 ### 1.0.2
 
