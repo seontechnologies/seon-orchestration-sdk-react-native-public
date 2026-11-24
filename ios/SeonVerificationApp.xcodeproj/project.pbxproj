@@ -23,6 +23,7 @@
 		6D37FC6901860EC1822403E2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = SeonVerificationApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SeonVerificationApp/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SeonVerificationApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0711CDA30B5CC300056D675 /* SeonVerificationApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SeonVerificationApp.entitlements; path = SeonVerificationApp/SeonVerificationApp.entitlements; sourceTree = "<group>"; };
 		BFCFB70F42EFC1D357F94425 /* Pods_SeonVerificationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeonVerificationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -42,6 +43,7 @@
 		13B07FAE1A68108700A75B9A /* SeonVerificationApp */ = {
 			isa = PBXGroup;
 			children = (
+				B0711CDA30B5CC300056D675 /* SeonVerificationApp.entitlements */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -267,7 +269,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_ENTITLEMENTS = SeonVerificationApp/SeonVerificationApp.entitlements;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SeonVerificationApp/Info.plist;
@@ -276,7 +279,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -298,15 +301,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_ENTITLEMENTS = SeonVerificationApp/SeonVerificationApp.entitlements;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = H22T9J6ZS3;
 				INFOPLIST_FILE = SeonVerificationApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
