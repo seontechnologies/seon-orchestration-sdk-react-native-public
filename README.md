@@ -217,6 +217,12 @@ npm run ios
 
 ## Changelog
 
+### 1.0.5
+
+- Updated native iOS `SEONOrchSDK` to **1.0.6**
+- Updated native Android `orchestration-android-sdk` to **1.0.3**
+- The `theme` passed to the SDK is now applied to the native loading screens from the first frame, and partial themes are accepted
+
 ### 1.0.4
 
 - Updated native iOS `SEONOrchSDK` to **1.0.5**
